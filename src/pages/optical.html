@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body class="leading-normal">
+    <%- include('./src/layout/header.ejs') %> <%-
+    include('./src/components/glasses-type-nav.ejs') %>
+    <section class="flex h-[136px] sm:h-[296px]">
+      <div
+        class="h-full w-1/2 bg-sm-product-left bg-cover bg-center xl:bg-product-left"
+      ></div>
+      <div
+        class="h-full w-1/2 bg-sm-product-right bg-cover bg-center xl:bg-product-right"
+      ></div>
+    </section>
+
+    <section class="container-base text-2xl">
+      <div class="pb-6 pt-10 text-center sm:pb-8 sm:pt-20">
+        <h2>Celluloid Combi</h2>
+        <h2>賽璐珞鈦金屬混合鏡框</h2>
+      </div>
+      <ul class="sm:grid sm:grid-cols-2 sm:gap-6 xl:grid-cols-4">
+        <li class="pb-6">
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-1.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li class="pb-6">
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-2.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li class="pb-6">
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-3.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li class="pb-6">
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-4.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-5.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-6.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-7.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-8.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-9.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-10.png?raw=true"
+              alt="BJ41600S"
+            />
+          </a>
+          <%- include('./src/components/product-item.ejs') %>
+        </li>
+      </ul>
+
+      <%- include('./src/components/pagination.ejs') %>
+    </section>
+
+    <%- include('./src/layout/footer.ejs') %>
+  </body>
+</html>
