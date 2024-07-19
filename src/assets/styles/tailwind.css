@@ -17,7 +17,7 @@
   }
 
   .header-menu-item-link {
-    @apply block py-3 sm:py-[25px];
+    @apply hover-effect block py-3 sm:py-[25px];
   }
 
   .professional-service-title {
@@ -49,11 +49,11 @@
   }
 
   .color-dark-brown {
-    @apply mr-2 block h-6 w-6 rounded bg-dark-brown;
+    @apply hover-effect mr-2 block h-6 w-6 rounded bg-dark-brown;
   }
 
   .color-medium-brown {
-    @apply mr-2 block h-6 w-6 rounded bg-medium-brown;
+    @apply hover-effect mr-2 block h-6 w-6 rounded bg-medium-brown;
   }
 
   .question-title {
@@ -81,7 +81,7 @@
   }
 
   .store-item-btn {
-    @apply block bg-black py-4 text-center text-lg text-white;
+    @apply block bg-black py-4 text-center text-lg text-white hover:bg-primary;
   }
 
   .store-map-space {
@@ -93,7 +93,7 @@
   }
 
   .blog-title {
-    @apply pt-2 text-2xl leading-9 text-primary md:pt-0 xl:text-[32px] xl:leading-[48px];
+    @apply hover-effect pt-2 text-2xl leading-9 text-primary md:pt-0 xl:text-[32px] xl:leading-[48px];
   }
 
   .blog-text {
@@ -109,7 +109,7 @@
   }
 
   .blog-pc-btn-block {
-    @apply mt-auto hidden xl:flex xl:justify-end;
+    @apply hover-effect mt-auto hidden xl:flex xl:justify-end;
   }
 
   .blog-pc-btn {
@@ -117,7 +117,7 @@
   }
 
   .blog-menu-item {
-    @apply block py-3 text-white;
+    @apply hover-effect block py-3 text-white;
   }
 
   .special-item {
@@ -142,5 +142,13 @@
 
   .pagination-link-inactive {
     @apply flex flex-grow flex-col border-b border-r border-t border-black bg-[#F2F2F2] hover:bg-black hover:text-white sm:flex-grow-0;
+  }
+
+  .footer-item {
+    @apply hover-effect block py-8;
+  }
+
+  .hover-effect {
+    @apply transform transition duration-200 ease-in hover:-translate-y-1;
   }
 }

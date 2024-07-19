@@ -1,25 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: {
-    enabled: true,
-    content: [
-      "./src/**/*.html",
-      "./src/**/*.js",
-      "./src/**/*.jsx",
-      "./src/**/*.ts",
-      "./src/**/*.tsx",
-      "./src/**/*.ejs",
-      "./index.html",
-    ],
-  },
-  variants: {},
+  content: [
+    "./src/**/*.html",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.ejs",
+    "./index.html",
+  ],
   plugins: [],
   theme: {
     fontFamily: {
       sans: ["Roboto", "Noto Sans TC", "sans-serif"],
     },
     container: {
-      center: true, // 將容器居中
+      center: true, // 将容器居中
       screens: {
         sm: "576px",
         md: "768px",
