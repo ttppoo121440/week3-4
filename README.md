@@ -1,10 +1,7 @@
-這是您 `README.md` 文件的更新內容，包含繁體中文的資料夾結構說明：
-
 ````markdown
-<h1 align="center">Welcome to week3-4 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
-</p>
+# Welcome to week3-4 👋
+
+![Version](https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000)
 
 > 第三週 第四週 作業
 
@@ -31,6 +28,7 @@ npm start
 |   .gitignore                 # Git 忽略文件配置，用於指定哪些文件或資料夾不被 Git 追蹤。
 |   .prettierrc                # Prettier 配置文件，用於配置程式碼格式化規則。
 |   eslint.config.js           # ESLint 配置文件，用於配置程式碼的靜態檢查規則。
+|   generate-tree.sh           # 腳本文件，用於生成專案目錄結構的樹狀圖。
 |   package-lock.json          # npm 鎖定文件，用於鎖定專案依賴的確切版本。
 |   package.json               # npm 配置文件，定義了專案的依賴、腳本和其他元資料。
 |   postcss.config.js          # PostCSS 配置文件，用於配置 CSS 的處理和插件。
@@ -46,11 +44,12 @@ npm start
 +---public                     # 靜態資源文件夾，通常包含靜態文件如圖像、字型等。
 |
 \---src                        # 原始碼文件夾，包含專案的源代碼文件。
+    |   main.js               # 主要的 JavaScript 入口文件。
     |   main.ts               # 主要的 TypeScript 入口文件。
     |
     +---assets                 # 資源文件夾，包含靜態資源和樣式。
     |   \---styles             # 樣式文件夾，包含 CSS 和 Tailwind CSS 文件。
-    |           styles.css     # Tailwind 產生的 CSS 文件。
+    |           styles.css     # 普通的 CSS 文件。
     |           tailwind.css   # Tailwind CSS 文件。
     |
     +---components            # 元件文件夾，包含專案中的 EJS 模板文件。
@@ -64,13 +63,13 @@ npm start
     |       header.ejs         # 頁頭布局的 EJS 模板。
     |
     \---pages                  # 頁面文件夾，包含 HTML 文件作為不同頁面的模板。
-            blog-detail.html  # 部落格詳細頁面的 HTML 文件。
-            blog.html         # 部落格首頁的 HTML 文件。
+            blog-detail.html  # 博客詳細頁面的 HTML 文件。
+            blog.html         # 博客首頁的 HTML 文件。
             index.html        # 首頁的 HTML 文件。
-            optical.html      # 光學眼鏡產品頁面的 HTML 文件。
+            optical.html      # 光學產品頁面的 HTML 文件。
             question.html     # 常見問題頁面的 HTML 文件。
-            store-map.html    # 門市據點地圖頁面的 HTML 文件。
-            store.html        # 門市據點的 HTML 文件。
+            store-map.html    # 店鋪地圖頁面的 HTML 文件。
+            store.html        # 店鋪首頁的 HTML 文件。
             sunglasses.html   # 太陽眼鏡頁面的 HTML 文件。
 ```
 
