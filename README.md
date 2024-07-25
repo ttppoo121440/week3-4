@@ -49,6 +49,7 @@ npm start
     |           tailwind.css   # Tailwind CSS 文件。
     |
     +---components            # 元件文件夾，包含專案中的 EJS 模板文件。
+    |       blog-nav.ejs                # 部落格導覽列元件的 EJS 模板。
     |       glasses-type-nav.ejs        # 眼鏡類型導航元件的 EJS 模板。
     |       pagination.ejs              # 分頁元件的 EJS 模板。
     |       product-background-image.ejs # 產品背景圖元件的 EJS 模板。

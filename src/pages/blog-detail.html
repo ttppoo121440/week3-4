@@ -22,34 +22,8 @@
     <script type="module" src="../main.ts"></script>
   </head>
   <body class="leading-normal">
-    <%- include('./src/layout/header.ejs') %>
-
-    <nav class="bg-[rgb(101,3,0)]">
-      <ul class="flex text-center md:container md:px-9 xl:px-0">
-        <li class="flex-1 md:mr-12 md:flex-none">
-          <a href="#" class="blog-menu-item"> 最新消息 </a>
-        </li>
-        <li class="flex-1 md:mr-12 md:flex-none">
-          <a href="#" class="blog-menu-item"> 特別企劃 </a>
-        </li>
-        <li class="flex-1 md:mr-12 md:flex-none">
-          <a href="#" class="blog-menu-item"> 新品上市 </a>
-        </li>
-        <li class="flex-1 md:mr-12 md:flex-none">
-          <a href="#" class="blog-menu-item"> 鏡框小知識 </a>
-        </li>
-        <li class="ml-auto hidden md:block">
-          <form>
-            <a href="#" class="hover-effect block">
-              <span class="material-symbols-outlined block p-3 text-white">
-                search
-              </span>
-            </a>
-          </form>
-        </li>
-      </ul>
-      <div></div>
-    </nav>
+    <%- include('./src/layout/header.ejs') %> <%-
+    include('./src/components/blog-nav.ejs') %>
 
     <nav class="container-base pt-4">
       <ol class="flex">
@@ -84,8 +58,8 @@
             情人特別企劃
           </h2>
           <h2 class="md:text-2xl md:leading-9">2020 Valentine’s Special</h2>
-          <ul class="pb-16 pt-4 md:pb-10 md:pt-6">
-            <li class="special-item">
+          <div class="pb-16 pt-4 md:pb-10 md:pt-6">
+            <article class="special-item">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-1.png?raw=true"
                 alt="2020 Valentine’s Special"
@@ -96,8 +70,8 @@
                 本次拍攝的鏡框款式與 NEEDS CLASSIC
                 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
               </p>
-            </li>
-            <li class="special-item">
+            </article>
+            <article class="special-item">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-2.png?raw=true"
                 alt="2020 Valentine’s Special"
@@ -108,8 +82,8 @@
                 本次拍攝的鏡框款式與 NEEDS CLASSIC
                 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
               </p>
-            </li>
-            <li class="special-item">
+            </article>
+            <article class="special-item">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-3.png?raw=true"
                 alt="2020 Valentine’s Special"
@@ -120,8 +94,8 @@
                 本次拍攝的鏡框款式與 NEEDS CLASSIC
                 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
               </p>
-            </li>
-            <li class="special-item">
+            </article>
+            <article class="special-item">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blogpage-4.png?raw=true"
                 alt="2020 Valentine’s Special"
@@ -135,8 +109,8 @@
                 濾藍光鏡片折500元 快快帶上另一半 <br />
                 讓彼此每一次睜開眼，都被愛的視線包圍!
               </p>
-            </li>
-          </ul>
+            </article>
+          </div>
         </div>
         <div
           class="hidden font-bold text-primary md:col-span-3 md:block xl:col-span-4"
@@ -168,9 +142,7 @@
     <div class="container-base hidden md:block md:pb-20">
       <div class="border-b border-black pb-5 xl:w-[53.5rem]">
         <ul class="flex">
-          <li class="pr-4 font-bold">
-            <a href="#" class="hover-effect block">Share</a>
-          </li>
+          <li class="pr-4 font-bold">Share</li>
           <li class="pr-4">
             <a href="#" class="hover-effect block">
               <svg
