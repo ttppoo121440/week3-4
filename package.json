@@ -5,11 +5,8 @@
   "type": "module",
   "homepage": "https://ttppoo121440.github.io/week3-4",
   "scripts": {
-    "start": "run-p dev watch:css",
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:css": "postcss src/assets/styles/tailwind.css -o dist/assets/styles/styles.css",
-    "watch:css": "postcss src/assets/styles/tailwind.css -o src/assets/styles/styles.css --watch",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
